@@ -11,6 +11,7 @@ html, body {
 
 #wrapper {
   width: 100%;
+  max-width: 925px;
   margin: auto;
 }
 
@@ -31,6 +32,8 @@ header {
   height: 320px;
   float: left;
 }
+
+
 
 #column-1 {
   background: #d5d5d5;
@@ -57,13 +60,17 @@ footer {
 /*---------- TABLET ----------*/
 /* Change the background colors below */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .col-3 {
+    width: 50%;
+  }
+  
   header {
-    background-color: red;
+    background-color: ;
   }
 
   #column-1 {
-    background-color: blue;
+    background-color: red;
   }
 
   #column-2 {
@@ -71,11 +78,12 @@ footer {
   }
 
   #column-3 {
-    background-color: red;
+    background-color: blue;
+    width: 100%;
   }
 
   footer {
-    background-color: white;
+    background-color: #d5d5d5;
   }
   
 }
@@ -83,24 +91,28 @@ footer {
 
 /*---------- Desktops ----------*/
 @media (min-width: 1200px) {
+  .col-3 {
+    width: 33.333333333%;
+  }
+  
   header {
-    background-color: navy;
+    background-color:;
   }
 
   #column-1 {
-    background-color: #FF6700;
+    background-color: navy;
   }
 
   #column-2 {
-    background-color: navy;
-  }
-
-  #column-3 {
     background-color: #FF6700;
   }
 
-  footer {
+  #column-3 {
     background-color: navy;
+  }
+
+  footer {
+    background-color: ;
   }
    
 }
